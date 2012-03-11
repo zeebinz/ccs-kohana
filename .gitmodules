@@ -1,0 +1,6 @@
+[submodule "plugins/ccs"]
+	path = plugins/ccs
+	url = git://github.com/srcspider/Cascading-Class-System.git
+[submodule "plugins/kohana/core/3.2"]
+	path = plugins/kohana/core/3.2
+	url = https://github.com/kohana/core.git

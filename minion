@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php namespace app;
+
+require 'environment.php';
+
+if (Kohana::$environment === Kohana::DEVELOPMENT)
+{
+	CLI::instance()->execute();
+}

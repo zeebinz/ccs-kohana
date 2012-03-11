@@ -1,0 +1,12 @@
+# redirect everything to public/ for easy drop & run development when working
+# directly in the server's www directory. It's better to just  alias, of course.
+# Or use alias and host file to make it look pretty. :)
+
+#####################  DO NOT RELY ON THIS IN PRODUCTION  ######################
+
+Options +FollowSymLinks
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{REQUEST_URI} ^(.*)$
+	RewriteRule ^(.*)$ %1public/ [L,R=301]
+</IfModule>
